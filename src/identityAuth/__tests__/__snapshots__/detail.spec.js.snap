@@ -1,0 +1,521 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`简单测试 renders correctly 1`] = `
+<div
+  className="ant-panel-wrapper"
+>
+  <div
+    className="ant-spin-nested-loading"
+    style={null}
+  >
+    <div
+      className="ant-spin-container"
+    >
+      <div
+        className="ant-panel"
+      >
+        <div
+          className="ant-panel-body"
+        >
+          <div
+            className="advanced-search-panel"
+          >
+            <form
+              className="ant-form ant-form-horizontal advanced-search-form"
+              onSubmit={[Function]}
+            >
+              <div
+                className="ant-row"
+                style={
+                  Object {
+                    "marginLeft": -10,
+                    "marginRight": -10,
+                  }
+                }
+              >
+                <div
+                  className="ant-col-8"
+                  style={
+                    Object {
+                      "paddingLeft": 10,
+                      "paddingRight": 10,
+                    }
+                  }
+                >
+                  <div
+                    className="ant-row ant-form-item"
+                  >
+                    <div
+                      className="ant-col-8 ant-form-item-label"
+                    >
+                      <label
+                        className=""
+                        htmlFor="dbName"
+                        onClick={[Function]}
+                        title="数据库名"
+                      >
+                        数据库名
+                      </label>
+                    </div>
+                    <div
+                      className="ant-col-16 ant-form-item-control-wrapper"
+                    >
+                      <div
+                        className="ant-form-item-control has-success"
+                      >
+                        <span
+                          className="ant-form-item-children"
+                        >
+                          <div
+                            className="ant-select ant-select-enabled ant-select-allow-clear"
+                            onBlur={[Function]}
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                            onMouseDown={[Function]}
+                            onTouchStart={[Function]}
+                          >
+                            <div
+                              aria-autocomplete="list"
+                              aria-expanded={false}
+                              aria-haspopup="true"
+                              className="ant-select-selection
+            ant-select-selection--single"
+                              onKeyDown={[Function]}
+                              role="combobox"
+                              tabIndex={0}
+                            >
+                              <div
+                                className="ant-select-selection__rendered"
+                              >
+                                <div
+                                  className="ant-select-selection__placeholder"
+                                  onClick={[Function]}
+                                  onMouseDown={[Function]}
+                                  style={
+                                    Object {
+                                      "WebkitUserSelect": "none",
+                                      "display": "none",
+                                      "userSelect": "none",
+                                    }
+                                  }
+                                  unselectable="on"
+                                >
+                                  全部
+                                </div>
+                                <div
+                                  className="ant-select-selection-selected-value"
+                                  style={
+                                    Object {
+                                      "display": "block",
+                                      "opacity": 1,
+                                    }
+                                  }
+                                  title="1"
+                                >
+                                  1
+                                </div>
+                              </div>
+                              <span
+                                className="ant-select-selection__clear"
+                                onClick={[Function]}
+                                onMouseDown={[Function]}
+                                style={
+                                  Object {
+                                    "WebkitUserSelect": "none",
+                                    "userSelect": "none",
+                                  }
+                                }
+                                unselectable="on"
+                              />
+                              <span
+                                className="ant-select-arrow"
+                                onClick={[Function]}
+                                style={
+                                  Object {
+                                    "WebkitUserSelect": "none",
+                                    "userSelect": "none",
+                                  }
+                                }
+                                unselectable="on"
+                              >
+                                <b />
+                              </span>
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="ant-col-8"
+                  style={
+                    Object {
+                      "paddingLeft": 10,
+                      "paddingRight": 10,
+                    }
+                  }
+                >
+                  <div
+                    className="ant-row ant-form-item"
+                  >
+                    <div
+                      className="ant-col-8 ant-form-item-label"
+                    >
+                      <label
+                        className=""
+                        htmlFor="assetType"
+                        onClick={[Function]}
+                        title="资产集合类型"
+                      >
+                        资产集合类型
+                      </label>
+                    </div>
+                    <div
+                      className="ant-col-16 ant-form-item-control-wrapper"
+                    >
+                      <div
+                        className="ant-form-item-control has-success"
+                      >
+                        <span
+                          className="ant-form-item-children"
+                        >
+                          <div
+                            className="ant-select ant-select-enabled ant-select-allow-clear"
+                            onBlur={[Function]}
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                            onMouseDown={[Function]}
+                            onTouchStart={[Function]}
+                          >
+                            <div
+                              aria-autocomplete="list"
+                              aria-expanded={false}
+                              aria-haspopup="true"
+                              className="ant-select-selection
+            ant-select-selection--single"
+                              onKeyDown={[Function]}
+                              role="combobox"
+                              tabIndex={0}
+                            >
+                              <div
+                                className="ant-select-selection__rendered"
+                              >
+                                <div
+                                  className="ant-select-selection__placeholder"
+                                  onClick={[Function]}
+                                  onMouseDown={[Function]}
+                                  style={
+                                    Object {
+                                      "WebkitUserSelect": "none",
+                                      "display": "none",
+                                      "userSelect": "none",
+                                    }
+                                  }
+                                  unselectable="on"
+                                >
+                                  全部
+                                </div>
+                                <div
+                                  className="ant-select-selection-selected-value"
+                                  style={
+                                    Object {
+                                      "display": "block",
+                                      "opacity": 1,
+                                    }
+                                  }
+                                  title="1"
+                                >
+                                  1
+                                </div>
+                              </div>
+                              <span
+                                className="ant-select-selection__clear"
+                                onClick={[Function]}
+                                onMouseDown={[Function]}
+                                style={
+                                  Object {
+                                    "WebkitUserSelect": "none",
+                                    "userSelect": "none",
+                                  }
+                                }
+                                unselectable="on"
+                              />
+                              <span
+                                className="ant-select-arrow"
+                                onClick={[Function]}
+                                style={
+                                  Object {
+                                    "WebkitUserSelect": "none",
+                                    "userSelect": "none",
+                                  }
+                                }
+                                unselectable="on"
+                              >
+                                <b />
+                              </span>
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="advanced-search-toolbar"
+              >
+                <button
+                  className="ant-btn ant-btn-primary"
+                  disabled={false}
+                  onClick={[Function]}
+                  type="submit"
+                >
+                  <span>
+                    搜 索
+                  </span>
+                </button>
+                
+              </div>
+            </form>
+          </div>
+          <div
+            className="button-groups"
+          >
+            <div
+              className="ant-btn-group"
+            >
+              <button
+                actionkey="add"
+                className="ant-btn ant-btn-primary"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                type="button"
+              >
+                <span>
+                  添 加
+                </span>
+              </button>
+              <span
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                style={
+                  Object {
+                    "cursor": "not-allowed",
+                    "display": "inline-block",
+                  }
+                }
+              >
+                <button
+                  actionkey="delete"
+                  className="ant-btn"
+                  disabled={true}
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "pointerEvents": "none",
+                    }
+                  }
+                  type="button"
+                >
+                  <span>
+                    删 除
+                  </span>
+                </button>
+              </span>
+              <button
+                actionkey="deleteAll"
+                className="ant-btn"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                type="button"
+              >
+                <span>
+                  清 空
+                </span>
+              </button>
+            </div>
+          </div>
+          <div
+            className="ant-table-wrapper"
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              className="ant-spin-nested-loading"
+              style={null}
+            >
+              <div
+                className="ant-spin-container"
+              >
+                <div
+                  className="ant-table ant-table-middle ant-table-empty ant-table-scroll-position-left"
+                  style={Object {}}
+                >
+                  <div
+                    className="ant-table-content"
+                  >
+                    <div
+                      className="ant-table-body"
+                      onScroll={[Function]}
+                      onWheel={[Function]}
+                      style={Object {}}
+                    >
+                      <table
+                        className=""
+                        style={Object {}}
+                      >
+                        <colgroup>
+                          <col
+                            style={
+                              Object {
+                                "minWidth": undefined,
+                                "width": undefined,
+                              }
+                            }
+                          />
+                          <col
+                            style={
+                              Object {
+                                "minWidth": undefined,
+                                "width": undefined,
+                              }
+                            }
+                          />
+                          <col
+                            style={
+                              Object {
+                                "minWidth": undefined,
+                                "width": undefined,
+                              }
+                            }
+                          />
+                          <col
+                            style={
+                              Object {
+                                "minWidth": 100,
+                                "width": 100,
+                              }
+                            }
+                          />
+                          <col
+                            style={
+                              Object {
+                                "minWidth": 100,
+                                "width": 100,
+                              }
+                            }
+                          />
+                          <col
+                            style={
+                              Object {
+                                "minWidth": 190,
+                                "width": 190,
+                              }
+                            }
+                          />
+                        </colgroup>
+                        <thead
+                          className="ant-table-thead"
+                        >
+                          <tr
+                            style={
+                              Object {
+                                "height": null,
+                              }
+                            }
+                          >
+                            <th
+                              className="ant-table-selection-column"
+                            >
+                              <span>
+                                <div
+                                  className="ant-table-selection"
+                                >
+                                  <label
+                                    className="ant-checkbox-wrapper"
+                                  >
+                                    <span
+                                      className="ant-checkbox ant-checkbox-disabled"
+                                      style={Object {}}
+                                    >
+                                      <input
+                                        checked={false}
+                                        className="ant-checkbox-input"
+                                        disabled={true}
+                                        onBlur={[Function]}
+                                        onChange={[Function]}
+                                        onFocus={[Function]}
+                                        type="checkbox"
+                                      />
+                                      <span
+                                        className="ant-checkbox-inner"
+                                      />
+                                    </span>
+                                  </label>
+                                </div>
+                              </span>
+                            </th>
+                            <th
+                              className=""
+                            >
+                              <span>
+                                资产集合名称
+                              </span>
+                            </th>
+                            <th
+                              className=""
+                            >
+                              <span>
+                                资产集合类型
+                              </span>
+                            </th>
+                            <th
+                              className=""
+                            >
+                              <span>
+                                数据库名
+                              </span>
+                            </th>
+                            <th
+                              className=""
+                            >
+                              <span>
+                                状态
+                              </span>
+                            </th>
+                            <th
+                              className=""
+                            >
+                              <span>
+                                操作
+                              </span>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody
+                          className="ant-table-tbody"
+                        />
+                      </table>
+                    </div>
+                    <div
+                      className="ant-table-placeholder"
+                    >
+                      No data
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

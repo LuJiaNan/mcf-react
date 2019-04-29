@@ -1,0 +1,138 @@
+[
+  {
+    "id": "assetMember.list.title",
+    "defaultMessage": "资产集合成员管理"
+  },
+  {
+    "id": "assetMember.form.title",
+    "defaultMessage": "业务数据编辑"
+  },
+  {
+    "id": "assetMember.tableTitel.label",
+    "defaultMessage": "表信息"
+  },
+  {
+    "id": "assetMember.columnTitle.label",
+    "defaultMessage": "敏感字段列信息"
+  },
+  {
+    "id": "assetMember.schema.label",
+    "defaultMessage": "SCHEMA"
+  },
+  {
+    "id": "assetMember.dbName.label",
+    "defaultMessage": "表名"
+  },
+  {
+    "id": "assetMember.dbType.label",
+    "defaultMessage": "类型"
+  },
+  {
+    "id": "assetMember.size.label",
+    "defaultMessage": "大小"
+  },
+  {
+    "id": "assetMember.returnCount.label",
+    "defaultMessage": "行数"
+  },
+  {
+    "id": "assetMember.accessCount.label",
+    "defaultMessage": "访问次数"
+  },
+  {
+    "id": "assetMember.assetType.label",
+    "defaultMessage": "资产类型"
+  },
+  {
+    "id": "assetMember.objectType.label",
+    "defaultMessage": "对象类型"
+  },
+  {
+    "id": "assetMember.object.label",
+    "defaultMessage": "对象"
+  },
+  {
+    "id": "assetMember.table.label",
+    "defaultMessage": "表"
+  },
+  {
+    "id": "assetMember.column.label",
+    "defaultMessage": "列"
+  },
+  {
+    "id": "assetMember.Transfer.locale.label",
+    "defaultMessage": "项"
+  },
+  {
+    "id": "assetMember..label",
+    "defaultMessage": "列数"
+  },
+  {
+    "id": "assetMember.sensitiveColumnCount.label",
+    "defaultMessage": "敏感列"
+  },
+  {
+    "id": "assetMember.accessRow.label",
+    "defaultMessage": "访问行数"
+  },
+  {
+    "id": "assetMember.updateRow.label",
+    "defaultMessage": "更新行数"
+  },
+  {
+    "id": "assetMember.updateCount.label",
+    "defaultMessage": "更新次数"
+  },
+  {
+    "id": "assetMember.deleteRow.label",
+    "defaultMessage": "删除行数"
+  },
+  {
+    "id": "assetMember.deleteCount.label",
+    "defaultMessage": "删除次数"
+  },
+  {
+    "id": "assetMember.insertRow.label",
+    "defaultMessage": "增加行数"
+  },
+  {
+    "id": "assetMember.insertCount.label",
+    "defaultMessage": "增加次数"
+  },
+  {
+    "id": "assetMember.selectRow.label",
+    "defaultMessage": "查询行数"
+  },
+  {
+    "id": "assetMember.selectCount.label",
+    "defaultMessage": "查询次数"
+  },
+  {
+    "id": "assetMember.columnId.label",
+    "defaultMessage": "序号"
+  },
+  {
+    "id": "assetMember.columnName.label",
+    "defaultMessage": "字段名"
+  },
+  {
+    "id": "assetMember.columnType.label",
+    "defaultMessage": "类型"
+  },
+  {
+    "id": "assetMember.busnissType.label",
+    "defaultMessage": "业务类型"
+  },
+  {
+    "id": "assetMember.columnSensitiveFlag.label",
+    "defaultMessage": "是否敏感列"
+  },
+  {
+    "id": "assetMember.Sensitive.label",
+    "defaultMessage": "脱敏策略"
+  },
+  {
+    "id": "assetMember.delete.confirm",
+    "defaultMessage": "是否确定删除已选中的记录?"
+  }
+]

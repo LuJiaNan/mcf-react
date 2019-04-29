@@ -1,0 +1,50 @@
+[
+  {
+    "id": "ftpmng.title",
+    "defaultMessage": "FTP服务器配置"
+  },
+  {
+    "id": "ftpmng.buttons.delete.confirm",
+    "defaultMessage": "是否确定删除已选列表数据?"
+  },
+  {
+    "id": "ftpmng.buttons.deleteAll.confirm",
+    "defaultMessage": "是否确定清空所有列表数据?"
+  },
+  {
+    "id": "dbname.label",
+    "defaultMessage": "数据库名"
+  },
+  {
+    "id": "assetType.label",
+    "defaultMessage": "资产集合类型"
+  },
+  {
+    "id": "column.title.index",
+    "defaultMessage": "序列"
+  },
+  {
+    "id": "column.title.assetName",
+    "defaultMessage": "资产集合名称"
+  },
+  {
+    "id": "column.title.assetType",
+    "defaultMessage": "资产集合类型"
+  },
+  {
+    "id": "column.title.dbName",
+    "defaultMessage": "数据库名"
+  },
+  {
+    "id": "column.title.status",
+    "defaultMessage": "状态"
+  },
+  {
+    "id": "column.title.createTime",
+    "defaultMessage": "创建时间"
+  },
+  {
+    "id": "button.authSetting",
+    "defaultMessage": "权限设置"
+  }
+]

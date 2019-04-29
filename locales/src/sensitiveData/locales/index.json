@@ -1,0 +1,54 @@
+[
+  {
+    "id": "sensitiveData.buttons.delete.confirm",
+    "defaultMessage": "是否确定删除已选中的敏感数据?"
+  },
+  {
+    "id": "sensitivedata.field.dbname.label",
+    "defaultMessage": "数据库名"
+  },
+  {
+    "id": "sensitivedata.field.sensitiverank.label",
+    "defaultMessage": "敏感级别"
+  },
+  {
+    "id": "sensitivedata.field.strategy.label",
+    "defaultMessage": "策略"
+  },
+  {
+    "id": "sensitivedata.field.assetmember.label",
+    "defaultMessage": "资产成员"
+  },
+  {
+    "id": "sensitivedata.field.member.manage",
+    "defaultMessage": "资产成员"
+  },
+  {
+    "id": "sensitivedata.field.column.assetName",
+    "defaultMessage": "资产集合名称"
+  },
+  {
+    "id": "sensitivedata.field.column.owner",
+    "defaultMessage": "所有者"
+  },
+  {
+    "id": "sensitivedata.field.column.assetType",
+    "defaultMessage": "资产类型"
+  },
+  {
+    "id": "sensitivedata.field.column.memberNum",
+    "defaultMessage": "成员数量"
+  },
+  {
+    "id": "sensitivedata.field.column.auditRank",
+    "defaultMessage": "审计级别"
+  },
+  {
+    "id": "sensitivedata.field.column.strategy",
+    "defaultMessage": "策略"
+  },
+  {
+    "id": "sensitivedata.field.column.createTime",
+    "defaultMessage": "创建时间"
+  }
+]

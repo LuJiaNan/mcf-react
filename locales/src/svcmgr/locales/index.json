@@ -1,0 +1,46 @@
+[
+  {
+    "id": "advancedsearch.input.label",
+    "defaultMessage": "关键字"
+  },
+  {
+    "id": "advancedsearch.input.placeholder",
+    "defaultMessage": "可输入服务名称进行查询"
+  },
+  {
+    "id": "restartall.confirmtitle",
+    "defaultMessage": "确认要重启所有服务吗？"
+  },
+  {
+    "id": "restartall.confirm",
+    "defaultMessage": "该操作将使服务暂时不可使用，是否确认？"
+  },
+  {
+    "id": "restartall.text",
+    "defaultMessage": "重启所有服务"
+  },
+  {
+    "id": "table.column.displayname",
+    "defaultMessage": "服务名称"
+  },
+  {
+    "id": "table.column.status",
+    "defaultMessage": "运行状态"
+  },
+  {
+    "id": "table.column.runtime",
+    "defaultMessage": "运行时间"
+  },
+  {
+    "id": "operate.button.restart",
+    "defaultMessage": "重启"
+  },
+  {
+    "id": "operate.button.stop",
+    "defaultMessage": "停止"
+  },
+  {
+    "id": "operate.button.start",
+    "defaultMessage": "启动"
+  }
+]

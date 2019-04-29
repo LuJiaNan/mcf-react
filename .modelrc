@@ -1,0 +1,14 @@
+{
+  "namespace": "asset",
+  "columns":[{
+    "name":"name"
+  },{
+    "name":"type"
+  },{
+    "name":"dbName"
+  },{
+    "name":"status"
+  },{
+    "name":"createTime"
+  }]
+}

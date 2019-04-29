@@ -1,0 +1,309 @@
+@import "~antd/dist/antd.less";
+.repeat{
+  width:100%;
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.ant-css{
+  table-layout:fixed;
+}
+
+#root{
+  width:100%;
+  height: 100%;
+  .app-loading{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-20px;
+    margin-top:-10px
+  }
+  .app-container{
+    width:100%;
+    height: 100%;
+    .app-context,
+    .app-context>div,
+    .app-context .ant-card,
+    .app-context .ant-card-body{
+      width:100%;
+      height: 100%;
+    }
+    .ant-card-body{
+      overflow: auto
+    }
+  }
+
+  .advanced-search-panel{
+    // border-bottom: 1px solid #e8e8e8;
+    padding-right: 170px;
+    position: relative;
+    .ant-col-8{
+      .ant-form-item{
+        margin-bottom: 0;
+      }
+    }
+  }
+  .advanced-search-toolbar{
+    position: absolute;
+    right: 0;
+    top: 4px;
+    .ant-btn{
+      margin: 0 5px;
+    }
+    .anticon-down{
+      cursor: pointer;
+    }
+
+  }
+
+
+  .app-container{
+    padding-left: 180px;
+    padding-top:50px;
+    position: relative;
+    .app-side{
+      position: absolute;
+      left: 0;
+      top:50px;
+      bottom:0;
+      width:180px;
+      padding-bottom:50px;
+      box-sizing: content-box;
+      & >img{
+        position: absolute;
+        top:-50px;
+        left:0;
+      }
+      .ant-menu{
+        height: 100%;
+        .ant-menu-item{
+          a{
+            display: inline;
+            color:#fff;
+          }
+        }
+      }
+      .app-side-footer{
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        background: #000;
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        line-height: 50px;
+        color:#fff;
+        .anticon{
+          cursor: pointer;
+        }
+      }
+    }
+    .app-nav{
+      position: absolute;
+      top:0;
+      left:180px;
+      height:50px;
+      line-height: 50px;
+      padding:0 20px;
+      right: 0;
+      .app-info{
+        .ant-dropdown-trigger{
+          margin-left:10px;
+          .anticon{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .app-context{
+      position: relative;
+      padding:20px;
+      background-color: #eaebef;
+
+    }
+  }
+
+  /*
+  .ant-table-body table{
+    table-layout: fixed;
+  }
+
+  .ant-table-row td div{
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  */
+  .ant-panel {
+    box-shadow: -2px -1px 5px 1px #d7d8db;
+
+    .ant-panel-body {
+
+      >.ant-form-horizontal {
+        position: relative;
+        padding-top:20px;
+
+        .ant-form-item {
+          margin-bottom: 10px;
+          .ant-form-explain{
+            position: absolute;
+            right: 0;
+            top:10px;
+            width: 300px;
+            margin-right: -310px;
+          }
+        }
+
+        .button-groups {
+          margin-bottom: 25px;
+
+          .ant-btn-group .ant-btn {
+            margin: 0 4px;
+            box-shadow: none;
+          }
+
+        }
+
+      }
+
+        .button-groups {
+          .ant-btn-group {
+            .ant-btn {
+              line-height: inherit;
+              margin-right: 10px;
+              border-radius: 4px;
+            }
+          }
+        }
+
+      .ant-table-wrapper {
+        .ant-table-pagination.ant-pagination{
+          margin:16px 0 0 0;
+        }
+        .ant-table-small{
+          border-width: 0;
+           > .ant-table-title{
+             border-width: 0;
+           }
+          .ant-table-content{
+            border-radius:0;
+
+          }
+          .ant-table-thead{
+            th{
+              background:#fafafa;
+            }
+          }
+        }
+        .ant-spin-nested-loading {
+          .ant-spin {
+            margin-top: 60px;
+
+          }
+
+        }
+
+      }
+
+      .ant-table {
+        table {
+          table-layout: fixed;
+
+          thead, tbody {
+            td {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+
+          }
+
+        }
+        .ant-table-row {
+          .button-groups {
+            .ant-btn-group > .ant-btn {
+              border: 0;
+              color: #2057a7;
+              height: 20px;
+              line-height: 20px;
+              border-left: 1px solid #e8e8e8;
+              box-shadow: none;
+              background: transparent;
+              padding-left: 8px;
+              padding-right: 8px;
+              margin-right: 0;
+            }
+
+            .ant-btn-group > .ant-btn:first-child {
+              border-left: 0;
+              padding-left: 0;
+            }
+
+            .ant-btn-group > .ant-btn:first-child:not(:last-child), .ant-btn-group > span:first-child:not(:last-child) > .ant-btn {
+              height: 20px;
+              line-height: 20px;
+            }
+
+          }
+
+        }
+
+      }
+
+      .ant-form-item-control .ant-form-item-children {
+        position: static;
+        .ant-input-number {
+          position: static;
+          display: block;
+          width: auto;
+          .ant-input-number-handler-wrap {
+            height: 32px;
+          }
+        }
+
+        .ant-input-group-addon {
+          .ant-form-item {
+            margin-bottom: 0;
+            .ant-form-item-control{
+              line-height: 26px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .ant-form .button-groups {
+    text-align: left;
+    padding-left: 12%;
+    .ant-btn-group {
+      .ant-btn {
+        margin: 0 10px;
+        border-radius: 4px !important;
+      }
+
+    }
+
+  }
+  .ant-table-detail{
+    .ant-table-title{
+      text-indent: 20px;
+      font-size: 14px;
+    }
+    .ant-table-tbody td:nth-child(odd) {
+      background-color: #f7f7f7;
+      width: 200px;
+    }
+  }
+}

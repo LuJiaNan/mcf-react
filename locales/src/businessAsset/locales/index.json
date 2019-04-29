@@ -1,0 +1,158 @@
+[
+  {
+    "id": "businessAsset.title",
+    "defaultMessage": "业务数据管理"
+  },
+  {
+    "id": "businessAsset.dbName.label",
+    "defaultMessage": "数据库名"
+  },
+  {
+    "id": "businessAsset.riskScope.label",
+    "defaultMessage": "策略"
+  },
+  {
+    "id": "businessAsset.assetMembers.label",
+    "defaultMessage": "资产成员"
+  },
+  {
+    "id": "businessAsset.sensitiveLevel.label",
+    "defaultMessage": "敏感级别"
+  },
+  {
+    "id": "businessAsset.name.label",
+    "defaultMessage": "资产集合名称"
+  },
+  {
+    "id": "businessAsset.owner.label",
+    "defaultMessage": "所有者"
+  },
+  {
+    "id": "businessAsset.type.label",
+    "defaultMessage": "资产类型"
+  },
+  {
+    "id": "businessAsset.count.label",
+    "defaultMessage": "成员数量"
+  },
+  {
+    "id": "businessAsset.auditLevel.label",
+    "defaultMessage": "审计级别"
+  },
+  {
+    "id": "businessAsset.createTime.label",
+    "defaultMessage": "创建时间"
+  },
+  {
+    "id": "businessAsset.buttonBar.add",
+    "defaultMessage": "增加"
+  },
+  {
+    "id": "businessAsset.buttonBar.delete",
+    "defaultMessage": "删除"
+  },
+  {
+    "id": "businessAsset.cz.edit",
+    "defaultMessage": "编辑"
+  },
+  {
+    "id": "businessAsset.cz.delete",
+    "defaultMessage": "删除"
+  },
+  {
+    "id": "businessAsset.cz.assetSet",
+    "defaultMessage": "资产成员配置"
+  },
+  {
+    "id": "businessAsset.delete.confirm",
+    "defaultMessage": "是否确定删除已选中的记录?"
+  },
+  {
+    "id": "businessAsset.form.title",
+    "defaultMessage": "业务数据编辑"
+  },
+  {
+    "id": "businessAsset.form.baseinfo.title",
+    "defaultMessage": "基本信息"
+  },
+  {
+    "id": "businessAsset.form.baseinfo.name",
+    "defaultMessage": "资产集合名称"
+  },
+  {
+    "id": "businessAsset.form.baseinfo.dbName",
+    "defaultMessage": "数据库名"
+  },
+  {
+    "id": "businessAsset.form.baseinfo.owner",
+    "defaultMessage": "所有者"
+  },
+  {
+    "id": "businessAsset.form.baseinfo.riskScope",
+    "defaultMessage": "安全策略"
+  },
+  {
+    "id": "businessAsset.form.baseinfo.blockingMode",
+    "defaultMessage": "阻断方式"
+  },
+  {
+    "id": "businessAsset.form.baseinfo.sensitive",
+    "defaultMessage": "敏感标签"
+  },
+  {
+    "id": "businessAsset.form.baseinfo.auditLevel",
+    "defaultMessage": "审计级别"
+  },
+  {
+    "id": "businessAsset.form.cz.title",
+    "defaultMessage": "操作属性"
+  },
+  {
+    "id": "businessAsset.form.cz.czAdd",
+    "defaultMessage": "增加"
+  },
+  {
+    "id": "businessAsset.form.cz.czDelete",
+    "defaultMessage": "删除"
+  },
+  {
+    "id": "businessAsset.form.cz.czEdit",
+    "defaultMessage": "修改"
+  },
+  {
+    "id": "businessAsset.form.cz.czSelect",
+    "defaultMessage": "查看"
+  },
+  {
+    "id": "businessAsset.form.cz.czMerge",
+    "defaultMessage": "合并"
+  },
+  {
+    "id": "businessAsset.form.advancedSet.title",
+    "defaultMessage": "高级配置"
+  },
+  {
+    "id": "businessAsset.form.advancedSet.accessRate.status",
+    "defaultMessage": "操作频次控制"
+  },
+  {
+    "id": "businessAsset.form.advancedSet.accessRate.num",
+    "defaultMessage": "频次"
+  },
+  {
+    "id": "businessAsset.form.advancedSet.accessRate.cyc",
+    "defaultMessage": "周期"
+  },
+  {
+    "id": "businessAsset.form.advancedSet.accessRate.action",
+    "defaultMessage": "响应行为"
+  },
+  {
+    "id": "businessAsset.form.advancedSet.returnCount.status",
+    "defaultMessage": "返回行数控制"
+  },
+  {
+    "id": "businessAsset.form.advancedSet.returnCount.num",
+    "defaultMessage": "返回行数"
+  }
+]

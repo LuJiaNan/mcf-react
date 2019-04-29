@@ -1,0 +1,130 @@
+[
+  {
+    "id": "ftpmng.title",
+    "defaultMessage": "FTP服务器配置"
+  },
+  {
+    "id": "ftpmng.buttons.delete.confirm",
+    "defaultMessage": "是否确定删除已选中的FTP服务器?"
+  },
+  {
+    "id": "ftpmng.buttons.disabled.confirm",
+    "defaultMessage": "是否确定禁用已选中的FTP服务器?"
+  },
+  {
+    "id": "ftpmng.buttons.enabled.confirm",
+    "defaultMessage": "是否确定启用已选中的FTP服务器?"
+  },
+  {
+    "id": "ftpmng.field.capacity.label",
+    "defaultMessage": "最大可用空间"
+  },
+  {
+    "id": "ftpmng.field.capacity.placeholder",
+    "defaultMessage": "请输入最大可用空间"
+  },
+  {
+    "id": "ftpmng.field.capacity.rules.integer",
+    "defaultMessage": "请输入整数"
+  },
+  {
+    "id": "ftpmng.field.capacity.rules.ranges",
+    "defaultMessage": "只允许输入1~2048值区间"
+  },
+  {
+    "id": "ftpmng.field.ftpType.label",
+    "defaultMessage": "FTP类型"
+  },
+  {
+    "id": "ftpmng.field.ftpType.placeholder",
+    "defaultMessage": "请选择FTP类型"
+  },
+  {
+    "id": "ftpmng.field.password.label",
+    "defaultMessage": "密码"
+  },
+  {
+    "id": "ftpmng.field.password.placeholder",
+    "defaultMessage": "请输入FTP服务器的密码"
+  },
+  {
+    "id": "ftpmng.field.serverIp.label",
+    "defaultMessage": "服务器IP"
+  },
+  {
+    "id": "ftpmng.field.serverIp.placeholder",
+    "defaultMessage": "请输入服务器IP地址"
+  },
+  {
+    "id": "ftpmng.field.serverIp.rules.checkIP",
+    "defaultMessage": "ip地址不正确"
+  },
+  {
+    "id": "ftpmng.field.serverName.label",
+    "defaultMessage": "服务器名称1"
+  },
+  {
+    "id": "ftpmng.field.serverName.placeholder",
+    "defaultMessage": "请输入服务器名称"
+  },
+  {
+    "id": "ftpmng.field.serverName.rules.max",
+    "defaultMessage": "最多25个字符"
+  },
+  {
+    "id": "ftpmng.field.serverPort.label",
+    "defaultMessage": "服务器端口"
+  },
+  {
+    "id": "ftpmng.field.serverPort.placeholder",
+    "defaultMessage": "请输入服务器端口号"
+  },
+  {
+    "id": "ftpmng.field.serverStatus.label",
+    "defaultMessage": "状态"
+  },
+  {
+    "id": "ftpmng.field.storageDir.label",
+    "defaultMessage": "存储目录"
+  },
+  {
+    "id": "ftpmng.field.storageDir.placeholder",
+    "defaultMessage": "请输入存储目录"
+  },
+  {
+    "id": "ftpmng.field.storageDir.rules.max",
+    "defaultMessage": "最多100个字符"
+  },
+  {
+    "id": "ftpmng.field.usedcapacity.label",
+    "defaultMessage": "磁盘已使用"
+  },
+  {
+    "id": "ftpmng.field.username.label",
+    "defaultMessage": "用户名"
+  },
+  {
+    "id": "ftpmng.field.username.placeholder",
+    "defaultMessage": "请输入FTP服务器的用户名"
+  },
+  {
+    "id": "sensitivedata.field.dbname.label",
+    "defaultMessage": "数据库名"
+  },
+  {
+    "id": "sensitivedata.field.sensitiverank.label",
+    "defaultMessage": "敏感级别"
+  },
+  {
+    "id": "sensitivedata.field.strategy.label",
+    "defaultMessage": "策略"
+  },
+  {
+    "id": "sensitivedata.field.assetmember.label",
+    "defaultMessage": "资产成员"
+  },
+  {
+    "id": "sensitivedata.field.member.manage",
+    "defaultMessage": "资产成员"
+  }
+]

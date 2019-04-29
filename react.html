@@ -1,0 +1,680 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>React开发总结和解决方案</title>
+  <style type="text/css">
+    body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #222;
+  font-size: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  background-color: #f7f7f7;
+}
+
+.slide-content {
+  width: 800px;
+  height: 600px;
+  overflow: hidden;
+  margin: 80px auto 0 auto;
+  padding: 30px;
+
+  font-weight: 200;
+  font-size: 200%;
+  line-height: 1.375;
+}
+
+.controls {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.arrow {
+  width: 0; height: 0;
+  border: 30px solid #333;
+  float: left;
+  margin-right: 30px;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.prev {
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+
+  border-left-width: 0;
+  border-right-width: 50px;
+}
+
+.next {
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+
+  border-left-width: 50px;
+  border-right-width: 0;
+}
+
+.prev:hover {
+  border-right-color: #888;
+  cursor: pointer;
+}
+
+.next:hover {
+  border-left-color: #888;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 300%;
+  line-height: 1.2;
+  text-align: center;
+  margin: 170px 0 0;
+}
+
+h2 {
+  font-size: 100%;
+  line-height: 1.2;
+  margin: 5px 0;
+  text-align: center;
+  font-weight: 200;
+}
+
+h3 {
+  font-size: 140%;
+  line-height: 1.2;
+  border-bottom: 1px solid #aaa;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+ul {
+  padding: 20px 0 0 60px;
+  font-weight: 200;
+  line-height: 1.375;
+}
+
+.author h1 {
+  font-size: 170%;
+  font-weight: 200;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.author h3 {
+  font-weight: 100;
+  text-align: center;
+  font-size: 95%;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: #44a4dd;
+}
+
+a:hover {
+  color: #66b5ff;
+}
+
+pre {
+  font-size: 60%;
+  line-height: 1.3;
+}
+
+.progress {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  z-index: 1;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 3px;
+  background-color: #b4b4b4;
+
+  -webkit-transition: width 0.05s ease-out;
+  -moz-transition: width 0.05s ease-out;
+  -o-transition: width 0.05s ease-out;
+  transition: width 0.05s ease-out;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 850px) {
+
+  body {
+    font-size: 70%;
+  }
+
+  .slide-content {
+    width: auto;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  h1 {
+    margin-top: 120px;
+  }
+
+  .prev, .prev:hover {
+    border-right-color: rgba(135, 135, 135, 0.5);
+  }
+
+  .next, .next:hover {
+    border-left-color: rgba(135, 135, 135, 0.5);
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 50%;
+    overflow: hidden;
+  }
+
+  .slide-content {
+    padding: 10px;
+    margin-top: 10px;
+    height: 340px;
+  }
+
+  h1 {
+    margin-top: 50px;
+  }
+
+  ul {
+    padding-left: 25px;
+  }
+}
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+  }
+
+  @page {
+    size: letter;
+  }
+
+  .hidden {
+    display: inline;
+  }
+
+  html {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+
+  body {
+    margin: 0 auto !important;
+    border: 0;
+    padding: 0;
+    float: none !important;
+    overflow: visible;
+    background: none !important;
+    font-size: 52%;
+  }
+
+  .progress, .controls {
+    display: none;
+  }
+
+  .slide {
+    position: static;
+  }
+
+  .slide-content {
+    border: 1px solid #222;
+    margin-top: 0;
+    margin-bottom: 40px;
+    height: 3.5in;
+    overflow: visible;
+  }
+
+  .slide:nth-child(even) {
+    /* 2 slides per page */
+    page-break-before: always;
+  }
+}
+
+/*
+
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #998;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #333;
+  font-weight: bold;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: #008080;
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: #d14;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  color: #900;
+  font-weight: bold;
+}
+
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-type,
+.hljs-class .hljs-title {
+  color: #458;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+  color: #000080;
+  font-weight: normal;
+}
+
+.hljs-regexp,
+.hljs-link {
+  color: #009926;
+}
+
+.hljs-symbol,
+.hljs-bullet {
+  color: #990073;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #0086b3;
+}
+
+.hljs-meta {
+  color: #999;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #fdd;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+
+  </style>
+</head>
+<body>
+    <div class="progress">
+    <div class="progress-bar"></div>
+  </div>
+
+  <div class="slide" id="slide-1">
+    <section class="slide-content"><h1 id="react-">React开发总结和改进</h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-2">
+    <section class="slide-content"><h2 id="-">我们现有问题</h2>
+<ul>
+<li>组件体系？各组件特性？</li>
+<li>redux? 数据驱动 ?</li>
+<li>代码职责？组件化？模块化？</li>
+<li>规范 ？团队协作？</li>
+<li>自测？质量？</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-3">
+    <section class="slide-content"><h2 id="-">单向数据流</h2>
+<p><img src="http://upload-images.jianshu.io/upload_images/16777-e9e03f0a1f0bc760.png?imageMogr2/auto-orient/" width="100%" ></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-4">
+    <section class="slide-content"><h2 id="-">前端组件化开发</h2>
+<blockquote>
+<p>最初的目的是代码重用，功能相对单一或者独立。在整个系统的代码层次上位于最底层，被其他代码所依赖，所以说组件化是纵向分层</p>
+</blockquote>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-5">
+    <section class="slide-content"><h2 id="-">前端模块化开发</h2>
+<blockquote>
+<p>最初的目的是将同一类型的代码整合在一起，所以模块的功能相对复杂，但都同属于一个业务。不同模块之间也会存在依赖关系，但大部分都是业务性的互相跳转，从地位上来说它们都是平级的</p>
+</blockquote>
+<ul>
+<li>简单化</li>
+<li>标准化</li>
+<li>可读性</li>
+<li>可维护性</li>
+<li>可扩展性</li>
+<li>可测试性</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-6">
+    <section class="slide-content"><h2 id="-">两者区别</h2>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th style="text-align:center">目的</th>
+<th style="text-align:right">特点</th>
+<th style="text-align:right">接口</th>
+<th style="text-align:right">成果</th>
+<th style="text-align:right">架构定位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>组件</td>
+<td style="text-align:center">重用、解耦</td>
+<td style="text-align:right">高重用、松耦合</td>
+<td style="text-align:right">无统一接口</td>
+<td style="text-align:right">基础库、基础组件</td>
+<td style="text-align:right">纵向分层</td>
+</tr>
+<tr>
+<td>模块</td>
+<td style="text-align:center">隔离/封装</td>
+<td style="text-align:right">高内聚、松耦合</td>
+<td style="text-align:right">统一接口</td>
+<td style="text-align:right">业务框架、业务模块</td>
+<td style="text-align:right">横向分块</td>
+</tr>
+</tbody>
+</table>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-7">
+    <section class="slide-content"><h2 id="-mcf-components">组件库 mcf-components</h2>
+<blockquote>
+<p>componets组件库：提供自定义组件、ANTD 二次封装组件。</p>
+</blockquote>
+<ul>
+<li>SearchFrom: 搜索组件</li>
+<li>DataTable:  表格组件带分页和列配置</li>
+<li>BaseForm :  基本Form 组件</li>
+<li>ButtonGroups : 按钮组件库</li>
+<li>FormItem :  表单项组件简化书写方式扩展功能</li>
+<li>Permission : 权限展示组件，是否渲染</li>
+<li>PropertyTable: 属性表格组件</li>
+<li>TreeView ：树组件</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-8">
+    <section class="slide-content"><h2 id="-mcf-crud">业务组件库 mcf-crud</h2>
+<blockquote>
+<p>crud 组件：为了解决日常业务开发｀增删改查｀功能抽象开发二次封装组件，减少大量重复性代码。</p>
+</blockquote>
+<ul>
+<li>ListPage : 列表页的父类组件，提供日常的搜索与表格联动、行选参数据保存、公有的请求入口、页面跳转方法</li>
+<li>FormPage : 表单页的父类组件，提供公有的请求入口、页面跳转方法、提交数据收集等。</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-9">
+    <section class="slide-content"><h2 id="-mcf-decorators">装释器组件库 mcf-decorators</h2>
+<blockquote>
+<p>装释器实现多种组件的组合关系：能过高阶组件方式实现，必免代码之间的依赖问题</p>
+</blockquote>
+<ul>
+<li>InnerComponent: 内并组件</li>
+<li>NestedComponent: 嵌套组件</li>
+<li>WrapperComponent: 外包组件</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-10">
+    <section class="slide-content"><h2 id="-mcf-icons">图标库 mcf-icons</h2>
+<blockquote>
+<p> 基于ANTD 字体库的封装，可以与ANTD组件接合直接使用。自定义图标以 &quot;mc-&quot;为前缀定义。目前已整合了 审计、融合、工作流、数据库加密等库。</p>
+</blockquote>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-11">
+    <section class="slide-content"><h2 id="-">开发规范思路</h2>
+<ul>
+<li>需求文档与业务接口先行</li>
+<li>代码分层化开发</li>
+<li>代码可测试</li>
+<li>模块间不依赖，所有共用采用独立包依赖</li>
+<li>组件可复用，共享组件使用</li>
+<li>团队或项目组一致性，差异化处理</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-12">
+    <section class="slide-content"><h2 id="-">相关资源</h2>
+<p>  <code>yarn add git+http://jaxlab.asuscomm.com/mcf/crud.git</code>
+  <code>yarn add git+http://jaxlab.asuscomm.com/mcf/decorators.git</code>
+  <code>yarn add git+http://jaxlab.asuscomm.com/mcf/icons.git</code>
+  <code>yarn add git+http://jaxlab.asuscomm.com/mcf/components.git</code>
+  <a href="http://jaxlab.asuscomm.com/mcf/router.git">demo</a>
+  <a href="https://redux.js.org/">redux</a>
+  <a href="https://redux-saga.js.org/">saga</a></p>
+</section>
+  </div>
+  <div class="slide hidden author-slide" id="slide-13">
+    <section class="slide-content"><div class="author">
+  <h1 class="name">jaxchow</h1>
+</div>
+</section>
+  </div>
+
+  <div class="controls">
+    <div class="arrow prev"></div>
+    <div class="arrow next"></div>
+  </div>
+
+
+  <script type="text/javascript">
+    /**
+ * Returns the current page number of the presentation.
+ */
+function currentPosition() {
+  return parseInt(document.querySelector('.slide:not(.hidden)').id.slice(6));
+}
+
+
+/**
+ * Navigates forward n pages
+ * If n is negative, we will navigate in reverse
+ */
+function navigate(n) {
+  var position = currentPosition();
+  var numSlides = document.getElementsByClassName('slide').length;
+
+  /* Positions are 1-indexed, so we need to add and subtract 1 */
+  var nextPosition = (position - 1 + n) % numSlides + 1;
+
+  /* Normalize nextPosition in-case of a negative modulo result */
+  nextPosition = (nextPosition - 1 + numSlides) % numSlides + 1;
+
+  document.getElementById('slide-' + position).classList.add('hidden');
+  document.getElementById('slide-' + nextPosition).classList.remove('hidden');
+
+  updateProgress();
+  updateURL();
+  updateTabIndex();
+}
+
+
+/**
+ * Updates the current URL to include a hashtag of the current page number.
+ */
+function updateURL() {
+  try {
+    window.history.replaceState({} , null, '#' + currentPosition());
+  } catch (e) {
+    window.location.hash = currentPosition();
+  }
+}
+
+
+/**
+ * Sets the progress indicator.
+ */
+function updateProgress() {
+  var progressBar = document.querySelector('.progress-bar');
+
+  if (progressBar !== null) {
+    var numSlides = document.getElementsByClassName('slide').length;
+    var position = currentPosition() - 1;
+    var percent = (numSlides === 1) ? 100 : 100 * position / (numSlides - 1);
+    progressBar.style.width = percent.toString() + '%';
+  }
+}
+
+
+/**
+ * Removes tabindex property from all links on the current slide, sets
+ * tabindex = -1 for all links on other slides. Prevents slides from appearing
+ * out of control.
+ */
+function updateTabIndex() {
+  var allLinks = document.querySelectorAll('.slide a');
+  var position = currentPosition();
+  var currentPageLinks = document.getElementById('slide-' + position).querySelectorAll('a');
+  var i;
+
+  for (i = 0; i < allLinks.length; i++) {
+    allLinks[i].setAttribute('tabindex', -1);
+  }
+
+  for (i = 0; i < currentPageLinks.length; i++) {
+    currentPageLinks[i].removeAttribute('tabindex');
+  }
+}
+
+/**
+ * Determines whether or not we are currently in full screen mode
+ */
+function isFullScreen() {
+  return document.fullscreenElement ||
+         document.mozFullScreenElement ||
+         document.webkitFullscreenElement ||
+         document.msFullscreenElement;
+}
+
+/**
+ * Toggle fullScreen mode on document element.
+ * Works on chrome (>= 15), firefox (>= 9), ie (>= 11), opera(>= 12.1), safari (>= 5).
+ */
+function toggleFullScreen() {
+  /* Convenient renames */
+  var docElem = document.documentElement;
+  var doc = document;
+
+  docElem.requestFullscreen =
+      docElem.requestFullscreen ||
+      docElem.msRequestFullscreen ||
+      docElem.mozRequestFullScreen ||
+      docElem.webkitRequestFullscreen.bind(docElem, Element.ALLOW_KEYBOARD_INPUT);
+
+  doc.exitFullscreen =
+      doc.exitFullscreen ||
+      doc.msExitFullscreen ||
+      doc.mozCancelFullScreen ||
+      doc.webkitExitFullscreen;
+
+  isFullScreen() ? doc.exitFullscreen() : docElem.requestFullscreen();
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Update the tabindex to prevent weird slide transitioning
+  updateTabIndex();
+
+  // If the location hash specifies a page number, go to it.
+  var page = window.location.hash.slice(1);
+  if (page) {
+    navigate(parseInt(page) - 1);
+  }
+
+  document.onkeydown = function (e) {
+    var kc = e.keyCode;
+
+    // left, down, H, J, backspace, PgUp - BACK
+    // up, right, K, L, space, PgDn - FORWARD
+    // enter - FULLSCREEN
+    if (kc === 37 || kc === 40 || kc === 8 || kc === 72 || kc === 74 || kc === 33) {
+      navigate(-1);
+    } else if (kc === 38 || kc === 39 || kc === 32 || kc === 75 || kc === 76 || kc === 34) {
+      navigate(1);
+    } else if (kc === 13) {
+      toggleFullScreen();
+    }
+  };
+
+  if (document.querySelector('.next') && document.querySelector('.prev')) {
+    document.querySelector('.next').onclick = function (e) {
+      e.preventDefault();
+      navigate(1);
+    };
+
+    document.querySelector('.prev').onclick = function (e) {
+      e.preventDefault();
+      navigate(-1);
+    };
+  }
+});
+
+
+  </script>
+</body>
+</html>

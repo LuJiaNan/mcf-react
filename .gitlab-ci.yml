@@ -1,0 +1,13 @@
+stages:
+    - test
+
+before_script:
+    - yarn install
+
+test_job:
+    stage: test
+    script:
+      - yarn test
+    tags:
+      - master
+      - develop

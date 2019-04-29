@@ -1,0 +1,82 @@
+[
+  {
+    "id": "backup.baseInfo.title",
+    "defaultMessage": "基本信息"
+  },
+  {
+    "id": "backup.buttons.delete.confirm",
+    "defaultMessage": "确定将选择的备份数据删除？"
+  },
+  {
+    "id": "backup.buttons.restore.confirm",
+    "defaultMessage": "确定将选择的备份数据恢复到平台？"
+  },
+  {
+    "id": "backup.buttons.restore.label",
+    "defaultMessage": "恢复"
+  },
+  {
+    "id": "backup.field.backupTime.label",
+    "defaultMessage": "备份时间范围"
+  },
+  {
+    "id": "backup.field.backupType.label",
+    "defaultMessage": "备份类型"
+  },
+  {
+    "id": "backup.field.dataStatus.label",
+    "defaultMessage": "在线状态"
+  },
+  {
+    "id": "backup.field.fileName.label",
+    "defaultMessage": "文件名称"
+  },
+  {
+    "id": "backup.field.fileSize.label",
+    "defaultMessage": "文件大小"
+  },
+  {
+    "id": "backup.field.serverName.label",
+    "defaultMessage": "服务器"
+  },
+  {
+    "id": "backup.field.operateRestoreTime.label",
+    "defaultMessage": "恢复时间"
+  },
+  {
+    "id": "backup.field.operateTime.label",
+    "defaultMessage": "备份时间"
+  },
+  {
+    "id": "backup.field.operateType.label",
+    "defaultMessage": "操作"
+  },
+  {
+    "id": "backup.field.result.label",
+    "defaultMessage": "结果"
+  },
+  {
+    "id": "backup.field.role.label",
+    "defaultMessage": "操作人"
+  },
+  {
+    "id": "backup.field.status.label",
+    "defaultMessage": "状态"
+  },
+  {
+    "id": "backup.field.time.label",
+    "defaultMessage": "时间"
+  },
+  {
+    "id": "backup.records.title",
+    "defaultMessage": "操作记录"
+  },
+  {
+    "id": "backup.type0.title",
+    "defaultMessage": "备份记录"
+  },
+  {
+    "id": "backup.type1.title",
+    "defaultMessage": "恢复记录"
+  }
+]

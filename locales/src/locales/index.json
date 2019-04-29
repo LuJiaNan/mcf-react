@@ -1,0 +1,74 @@
+[
+  {
+    "id": "APP.NAME",
+    "defaultMessage": "融合项目"
+  },
+  {
+    "id": "APP.VER",
+    "defaultMessage": "V3.9"
+  },
+  {
+    "id": "GLOBAL.ALL",
+    "defaultMessage": "全部"
+  },
+  {
+    "id": "GLOBAL.BACK",
+    "defaultMessage": "返回"
+  },
+  {
+    "id": "GLOBAL.CANCEL",
+    "defaultMessage": "取消"
+  },
+  {
+    "id": "GLOBAL.COLUMNS.OPTIONS",
+    "defaultMessage": "操作"
+  },
+  {
+    "id": "GLOBAL.DETAIL",
+    "defaultMessage": "详情"
+  },
+  {
+    "id": "GLOBAL.DISABLED",
+    "defaultMessage": "禁用"
+  },
+  {
+    "id": "GLOBAL.ENABLED",
+    "defaultMessage": "启用"
+  },
+  {
+    "id": "GLOBAL.LIST",
+    "defaultMessage": "列表"
+  },
+  {
+    "id": "GLOBAL.MODIFY",
+    "defaultMessage": "编辑"
+  },
+  {
+    "id": "GLOBAL.NEW",
+    "defaultMessage": "添加"
+  },
+  {
+    "id": "GLOBAL.REMOVE",
+    "defaultMessage": "删除"
+  },
+  {
+    "id": "GLOBAL.RESET",
+    "defaultMessage": "重置"
+  },
+  {
+    "id": "GLOBAL.RULES.REQUIRED",
+    "defaultMessage": "必填"
+  },
+  {
+    "id": "GLOBAL.SAVE",
+    "defaultMessage": "保存"
+  },
+  {
+    "id": "GLOBAL.SEARCH",
+    "defaultMessage": "搜索"
+  },
+  {
+    "id": "GLOBAL.SURE",
+    "defaultMessage": "确认"
+  }
+]
