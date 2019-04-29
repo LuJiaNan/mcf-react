@@ -34,7 +34,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "jest",
+    "test": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "test:watch": "npm test -- --watch",
     "electron": "set ELECTRON_ENABLE_LOGGING=true && electron src/client.js --debug &",
     "package": "node_modules/.bin/electron-packager build rsm-application  --electronVersion=1.7.5 --platform=darwin   --out=releases  --overwrite --asar=true"
@@ -77,6 +77,7 @@
     "bfj": "6.1.1",
     "case-sensitive-paths-webpack-plugin": "2.1.2",
     "chalk": "^2.4.1",
+    "coveralls": "^3.0.3",
     "css-loader": "1.0.0",
     "dotenv": "6.0.0",
     "dotenv-expand": "4.2.0",
