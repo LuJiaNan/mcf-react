@@ -109,7 +109,7 @@ class SideMenu extends React.PureComponent{
             <Menu.Item key="18">
               <Icon type="pie-chart" />
               <span>
-                <NavLink to={{ pathname: '/asset' }} >
+                <NavLink to={{ pathname: '/assetAuth' }} >
                 资产授权
                 </NavLink>
               </span>

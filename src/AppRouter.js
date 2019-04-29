@@ -36,7 +36,7 @@ export default class AppRouter extends PureComponent{
         <Route path="/assetMember" component={registerModule(import("./assetMember"))} />
         <Route path="/sensitiveData" component={registerModule(import("./sensitiveData"))} />
         <Route path="/identityAuth" component={registerModule(import("./identityAuth"))} />
-        <Route path="/asset" component={registerModule(import("./asset"))} />
+        <Route path="/assetAuth" component={registerModule(import("./assetAuth"))} />
         <Route path="/whiteName" component={registerModule(import("./whiteName"))} />
         <Route path="/svcmgr" component={registerModule(import("./svcmgr"))} />
         <Route path="/switch/:type" component={swtchTabsPanel}/>
